@@ -1,0 +1,12 @@
+%h2 Facebook Like Button
+%form{:action => '/admin/plugins/facebook_like_button', :method => 'post'}
+  %input{:type => 'hidden', :name => '_method', :value => 'put'}
+  .field
+    %label{:for => 'facebook_like_button_verb'} Verb to display
+    %br
+    %input{:type => 'radio', :id => 'facebook_like_button_verb_like', :name => 'facebook_like_button_verb', :value => 'like', :checked => Option.facebook_like_button_verb == 'like'}
+    %label{:for => 'facebook_like_button_verb_like'} like
+    %input{:type => 'radio', :id => 'facebook_like_button_verb_recommend', :name => 'facebook_like_button_verb', :value => 'recommend', :checked => Option.facebook_like_button_verb == 'recommend'}
+    %label{:for => 'facebook_like_button_verb_recommend'} recommend
+  .field
+    %input{:type => 'submit', :value => t.edit}
