@@ -9,6 +9,17 @@
 </div>
 <% end %>
 
+<% if googlecalendar = Snippet("googlecalendar") %>
+<div id="googlecalendar" class="side_cont_wrapper">
+	<h3 class="side_cont_title">
+	  開催日カレンダー
+	</h3>
+	<div class="side_cont_body">
+		<%= googlecalendar.body %>
+	</div>
+</div>
+<% end %>
+
 <div id="recent_entry" class="side_cont_wrapper">
 	<h3 class="side_cont_title">
 	  <%= t.recent_entries %>
