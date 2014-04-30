@@ -1,0 +1,16 @@
+/*.sqlite3
+/db/*.sqlite3
+/bundle
+/vendor/bundle
+/vendor/gem
+/.bundle
+/tmp/*.log
+/log/*.log
+/*.csv
+/coverage
+.DS_Store
+/tags
+/import.rb
+/pkg
+/.rvmrc
+/Lokka.app
