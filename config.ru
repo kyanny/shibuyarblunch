@@ -1,7 +1,7 @@
 use Rack::ETag
 use Rack::Static, {
   :urls => ["/"],
-  :root => ["docroot"],
+  :root => "docroot",
   :index => "index.html",
   :header_rules => [
     [:all,    { "Content-Type" => "text/html" }],
